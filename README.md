@@ -3,7 +3,7 @@
 
 API e documentação de comunicação com a plataforma [Use Entregas](http://useentregas.com.br).
 
-Direitos reservados à Php Enterprise Soluções em Software Ltda.
+Direitos reservados à [Php Enterprise](http://useentregas.com.br) Soluções em Software Ltda.
 
 ### Requísitos 
 
@@ -32,7 +32,7 @@ Será necessário a criação de um login, chave de acesso e a liberação do en
 ### Tipos de métodos
 
 ##### GET : /api/list/
-Lista todas as entregas
+Lista todas as entregas.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
@@ -40,7 +40,7 @@ Lista todas as entregas
 
 
 ##### GET : /api/rider/:id
-Lista todas as entregas de um determinado entregador
+Lista todas as entregas de um determinado entregador.
 
 Breve exemplo, para ver a lista completa faça uma chamada a rota Rest acima.
 
@@ -48,7 +48,7 @@ Breve exemplo, para ver a lista completa faça uma chamada a rota Rest acima.
 | ------------- | ------------ | ------------- |
 | id            | integer      | código
 
-##### POST : /api/delivery/:id
+##### GET : /api/delivery/:id
 Lista os detalhes de uma entrega específica.
 
 | campo         | tipo         |  descrição  |
