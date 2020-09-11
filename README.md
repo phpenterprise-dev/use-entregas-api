@@ -42,11 +42,10 @@ Lista todas as entregas.
 ##### GET : /api/rider/:id
 Lista todas as entregas de um determinado entregador.
 
-Breve exemplo, para ver a lista completa faça uma chamada a rota Rest acima.
-
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
 | id            | integer      | código
+
 
 ##### GET : /api/delivery/:id
 Lista os detalhes de uma entrega específica.
@@ -55,12 +54,14 @@ Lista os detalhes de uma entrega específica.
 | ------------- | ------------ | ------------- |
 | id            | integer      | código
 
+
 ##### POST : /api/simulate
 Simula uma entrega.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
 | id            | integer      | código
+
 
 ##### POST : /api/add
 Adiciona uma nova entrega.
