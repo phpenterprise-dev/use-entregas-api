@@ -3,8 +3,6 @@
 
 API e documentação de comunicação com a plataforma [Use Entregas](http://useentregas.com.br).
 
-[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/MIT/) [![PHPPackages Rank](http://phppackages.org/p/smartdealer/sdapi/badge/rank.svg)](http://phppackages.org/p/smartdealer/sdapi) ![](https://reposs.herokuapp.com/?path=smartdealer/sdapi&style=flat)
-
 Direitos reservados à Php Enterprise Soluções em Software Ltda.
 
 ### Requísitos 
