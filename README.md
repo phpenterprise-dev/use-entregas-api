@@ -43,19 +43,19 @@ Lista todas as entregas.
 | DistanciaTotalMelhorRota            | float      | Distância da entrega
 | AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
 | Observacao            | string      | Observações
-| TokenDesconto            | integer      | VERIFICAR!!
+| TokenDesconto            | string      | VERIFICAR!!
 | ValorCorrida            | float      | Valor total da corrida
 | ValorBoy            | float      | Valor para o motoboy
 | ValorUse            | float      | Valor para a Use Entregas
 | DthCad            | datetime      | Data e hora do cadastro da entrega
-| IdBoyAceitou            | integer      | Código do motoboy que aceitou a entrega
+| IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
 | TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
-| StatusEntrega            | integer      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
+| StatusEntrega            | string      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
 | StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
-| TokenPagamento            | integer      | VERIFICAR!!
+| TokenPagamento            | string      | VERIFICAR!!
 | DthPagamento            | datetime      | Data e hora do pagamento
 | Teste            | integer      | VERIFICAR!!
-| TokenRel            | integer      | VERIFICAR!!
+| TokenRel            | string      | VERIFICAR!!
 
 
 ##### GET : /api/rider/:id
