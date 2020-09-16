@@ -36,24 +36,24 @@ Lista todas as entregas.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
-| Id            | integer      | código
-| TokenUser            | integer      | código
-| TipoEntrega1            | integer      | código
-| DistanciaBoyEntrega            | integer      | código
-| DistanciaTotalMelhorRota            | integer      | código
-| AgendarEntrega            | integer      | código
-| Observacao            | integer      | código
+| Id            | integer      | Id da entrega
+| TokenUser            | string      | código do usuário
+| TipoEntrega1            | string      | Tipo da entrega: 1 simples, 2 malote, 3 banco, 4 cartório
+| DistanciaBoyEntrega            | float      | código
+| DistanciaTotalMelhorRota            | float      | código
+| AgendarEntrega            | datetime      | código
+| Observacao            | string      | código
 | TokenDesconto            | integer      | código
-| ValorCorrida            | integer      | código
-| ValorBoy            | integer      | código
-| ValorUse            | integer      | código
-| DthCad            | integer      | código
+| ValorCorrida            | float      | código
+| ValorBoy            | float      | código
+| ValorUse            | float      | código
+| DthCad            | datetime      | código
 | IdBoyAceitou            | integer      | código
 | TipoPagamento            | integer      | código
 | StatusEntrega            | integer      | código
 | StatusPagamento            | integer      | código
 | TokenPagamento            | integer      | código
-| DthPagamento            | integer      | código
+| DthPagamento            | datetime      | código
 | Teste            | integer      | código
 | TokenRel            | integer      | código
 
