@@ -37,25 +37,25 @@ Lista todas as entregas.
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
 | Id            | integer      | Id da entrega
-| TokenUser            | string      | código do usuário
+| TokenUser            | string      | Código do usuário
 | TipoEntrega1            | string      | Tipo da entrega: 1 simples, 2 malote, 3 banco, 4 cartório
-| DistanciaBoyEntrega            | float      | código
-| DistanciaTotalMelhorRota            | float      | código
-| AgendarEntrega            | datetime      | código
-| Observacao            | string      | código
-| TokenDesconto            | integer      | código
-| ValorCorrida            | float      | código
-| ValorBoy            | float      | código
-| ValorUse            | float      | código
-| DthCad            | datetime      | código
-| IdBoyAceitou            | integer      | código
-| TipoPagamento            | integer      | código
-| StatusEntrega            | integer      | código
-| StatusPagamento            | integer      | código
-| TokenPagamento            | integer      | código
-| DthPagamento            | datetime      | código
-| Teste            | integer      | código
-| TokenRel            | integer      | código
+| DistanciaBoyEntrega            | float      | VERIFICAR!!
+| DistanciaTotalMelhorRota            | float      | Distância da entrega
+| AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
+| Observacao            | string      | Observações
+| TokenDesconto            | integer      | VERIFICAR!!
+| ValorCorrida            | float      | Valor total da corrida
+| ValorBoy            | float      | Valor para o motoboy
+| ValorUse            | float      | Valor para a Use Entregas
+| DthCad            | datetime      | Data e hora do cadastro da entrega
+| IdBoyAceitou            | integer      | Código do motoboy que aceitou a entrega
+| TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
+| StatusEntrega            | integer      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
+| StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
+| TokenPagamento            | integer      | VERIFICAR!!
+| DthPagamento            | datetime      | Data e hora do pagamento
+| Teste            | integer      | VERIFICAR!!
+| TokenRel            | integer      | VERIFICAR!!
 
 
 ##### GET : /api/rider/:id
