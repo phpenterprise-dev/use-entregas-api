@@ -29,10 +29,7 @@ Será necessário a criação de um login, chave de acesso e a liberação do en
 
 ...
 
-### Tipos de métodos
-
-##### GET : /api/list/
-Lista todas as entregas.
+### Dicionário de dados
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
@@ -57,20 +54,32 @@ Lista todas as entregas.
 | Teste            | integer      | VERIFICAR!!
 | TokenRel            | string      | VERIFICAR!!
 
+### Tipos de métodos
+
+##### GET : /api/list/
+Lista todas as entregas.
 
 ##### GET : /api/rider/:id
 Lista todas as entregas de um determinado entregador.
-
-| campo         | tipo         |  descrição  |
-| ------------- | ------------ | ------------- |
-| id            | integer      | código
-
 
 ##### GET : /api/delivery/:id
 Lista os detalhes de uma entrega específica.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
 | id            | integer      | código
 
 
@@ -80,6 +89,19 @@ Simula uma entrega.
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
 | id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
 
 
 ##### POST : /api/add
@@ -87,6 +109,19 @@ Adiciona uma nova entrega.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
+| id            | integer      | código
 | id            | integer      | código
 
 
