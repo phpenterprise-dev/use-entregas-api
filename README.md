@@ -38,7 +38,7 @@ Lista todas as entregas.
 | ------------- | ------------ | ------------- |
 | Id            | integer      | Id da entrega
 | TokenUser            | string      | Código do usuário
-| TipoEntrega1            | string      | Tipo da entrega: 1 simples, 2 malote, 3 banco, 4 cartório
+| TipoEntrega1            | string      | Tipo da entrega: 1 = simples, 2 = malote, 3 = banco, 4 = cartório
 | DistanciaBoyEntrega            | float      | VERIFICAR!!
 | DistanciaTotalMelhorRota            | float      | Distância da entrega
 | AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
@@ -50,7 +50,7 @@ Lista todas as entregas.
 | DthCad            | datetime      | Data e hora do cadastro da entrega
 | IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
 | TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
-| StatusEntrega            | string      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
+| StatusEntrega            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
 | StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
 | TokenPagamento            | string      | VERIFICAR!!
 | DthPagamento            | datetime      | Data e hora do pagamento
@@ -64,7 +64,7 @@ Lista todas as entregas de um determinado entregador.
 | ------------- | ------------ | ------------- |
 | Id            | integer      | Id da entrega
 | TokenUser            | string      | Código do usuário
-| TipoEntrega1            | string      | Tipo da entrega: 1 simples, 2 malote, 3 banco, 4 cartório
+| TipoEntrega1            | string      | Tipo da entrega: 1 = simples, 2 = malote, 3 = banco, 4 = cartório
 | DistanciaBoyEntrega            | float      | VERIFICAR!!
 | DistanciaTotalMelhorRota            | float      | Distância da entrega
 | AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
@@ -76,7 +76,7 @@ Lista todas as entregas de um determinado entregador.
 | DthCad            | datetime      | Data e hora do cadastro da entrega
 | IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
 | TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
-| StatusEntrega            | string      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
+| StatusEntrega            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
 | StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
 | TokenPagamento            | string      | VERIFICAR!!
 | DthPagamento            | datetime      | Data e hora do pagamento
@@ -90,7 +90,7 @@ Lista os detalhes de uma entrega específica.
 | ------------- | ------------ | ------------- |
 | Id            | integer      | Id da entrega
 | TokenUser            | string      | Código do usuário
-| TipoEntrega1            | string      | Tipo da entrega: 1 simples, 2 malote, 3 banco, 4 cartório
+| TipoEntrega1            | string      | Tipo da entrega: 1 = simples, 2 = malote, 3 = banco, 4 = cartório
 | DistanciaBoyEntrega            | float      | VERIFICAR!!
 | DistanciaTotalMelhorRota            | float      | Distância da entrega
 | AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
@@ -102,13 +102,12 @@ Lista os detalhes de uma entrega específica.
 | DthCad            | datetime      | Data e hora do cadastro da entrega
 | IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
 | TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
-| StatusEntrega            | string      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
+| StatusEntrega            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
 | StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
 | TokenPagamento            | string      | VERIFICAR!!
 | DthPagamento            | datetime      | Data e hora do pagamento
 | Teste            | integer      | VERIFICAR!!
 | TokenRel            | string      | VERIFICAR!!
-
 
 ##### POST : /api/simulate
 Simula uma entrega.
