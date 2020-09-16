@@ -29,7 +29,10 @@ Será necessário a criação de um login, chave de acesso e a liberação do en
 
 ...
 
-### Dicionário de dados
+### Tipos de métodos
+
+##### GET : /api/list/
+Lista todas as entregas.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
@@ -54,33 +57,57 @@ Será necessário a criação de um login, chave de acesso e a liberação do en
 | Teste            | integer      | VERIFICAR!!
 | TokenRel            | string      | VERIFICAR!!
 
-### Tipos de métodos
-
-##### GET : /api/list/
-Lista todas as entregas.
-
 ##### GET : /api/rider/:id
 Lista todas as entregas de um determinado entregador.
+
+| campo         | tipo         |  descrição  |
+| ------------- | ------------ | ------------- |
+| Id            | integer      | Id da entrega
+| TokenUser            | string      | Código do usuário
+| TipoEntrega1            | string      | Tipo da entrega: 1 simples, 2 malote, 3 banco, 4 cartório
+| DistanciaBoyEntrega            | float      | VERIFICAR!!
+| DistanciaTotalMelhorRota            | float      | Distância da entrega
+| AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
+| Observacao            | string      | Observações
+| TokenDesconto            | string      | VERIFICAR!!
+| ValorCorrida            | float      | Valor total da corrida
+| ValorBoy            | float      | Valor para o motoboy
+| ValorUse            | float      | Valor para a Use Entregas
+| DthCad            | datetime      | Data e hora do cadastro da entrega
+| IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
+| TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
+| StatusEntrega            | string      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
+| StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
+| TokenPagamento            | string      | VERIFICAR!!
+| DthPagamento            | datetime      | Data e hora do pagamento
+| Teste            | integer      | VERIFICAR!!
+| TokenRel            | string      | VERIFICAR!!
 
 ##### GET : /api/delivery/:id
 Lista os detalhes de uma entrega específica.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
+| Id            | integer      | Id da entrega
+| TokenUser            | string      | Código do usuário
+| TipoEntrega1            | string      | Tipo da entrega: 1 simples, 2 malote, 3 banco, 4 cartório
+| DistanciaBoyEntrega            | float      | VERIFICAR!!
+| DistanciaTotalMelhorRota            | float      | Distância da entrega
+| AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
+| Observacao            | string      | Observações
+| TokenDesconto            | string      | VERIFICAR!!
+| ValorCorrida            | float      | Valor total da corrida
+| ValorBoy            | float      | Valor para o motoboy
+| ValorUse            | float      | Valor para a Use Entregas
+| DthCad            | datetime      | Data e hora do cadastro da entrega
+| IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
+| TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
+| StatusEntrega            | string      | Status da entrega: 1 procurando entregador, 2 em andamento, 3 cancelada, 9 concluída
+| StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
+| TokenPagamento            | string      | VERIFICAR!!
+| DthPagamento            | datetime      | Data e hora do pagamento
+| Teste            | integer      | VERIFICAR!!
+| TokenRel            | string      | VERIFICAR!!
 
 
 ##### POST : /api/simulate
