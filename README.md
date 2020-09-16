@@ -36,7 +36,26 @@ Lista todas as entregas.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
-| id            | integer      | código
+| Id            | integer      | código
+| TokenUser            | integer      | código
+| TipoEntrega1            | integer      | código
+| DistanciaBoyEntrega            | integer      | código
+| DistanciaTotalMelhorRota            | integer      | código
+| AgendarEntrega            | integer      | código
+| Observacao            | integer      | código
+| TokenDesconto            | integer      | código
+| ValorCorrida            | integer      | código
+| ValorBoy            | integer      | código
+| ValorUse            | integer      | código
+| DthCad            | integer      | código
+| IdBoyAceitou            | integer      | código
+| TipoPagamento            | integer      | código
+| StatusEntrega            | integer      | código
+| StatusPagamento            | integer      | código
+| TokenPagamento            | integer      | código
+| DthPagamento            | integer      | código
+| Teste            | integer      | código
+| TokenRel            | integer      | código
 
 
 ##### GET : /api/rider/:id
