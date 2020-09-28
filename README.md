@@ -19,8 +19,8 @@ Método Baurer
 
 Parâmetros do header na chamada:
 
-Content-Type: Application/JSON
-Authorization: Bearer {usertoken}
+<i>Content-Type: Application/JSON
+Authorization: Bearer {usertoken}</i>
 
 ### Exemplo de uso
 
