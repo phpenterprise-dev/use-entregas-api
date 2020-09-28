@@ -28,10 +28,11 @@ Authorization: Bearer {usertoken}
 
 ### Tipos de métodos
 
-##### GET : /
+##### GET : api/
+
 Permite testar se conectou-se com sucesso à API.
 
-##### GET : /list
+##### GET : api/list
 
 Lista todas as entregas.
 
@@ -47,7 +48,7 @@ Lista todas as entregas.
 | valor_use            | float      | Valor para a Use Entregas
 | data_entrega            | datetime      | Data e hora da entrega
 | tipo            | string      | Tipo da entrega: 1 = simples, 2 = malote, 3 = banco, 4 = cartório
-| pagamento            | string      | 
+| pagamento            | string      | Tipo de pagamento
 | status            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
 | observacao            | string      | Observações
 | enderecos | array | Listagem de endereços (vide tabela abaixo) 
@@ -63,67 +64,37 @@ Lista todas as entregas.
 | complemento | string | Complemento
 | ordem | string | Ordem da entrega, local 1 é a origem.
 
-
-
-
-
-
-
-
-
-
-
-##### GET : /api/rider/:id
-Lista todas as entregas de um determinado entregador.
-
-| campo         | tipo         |  descrição  |
-| ------------- | ------------ | ------------- |
-| Id            | integer      | Id da entrega
-| TokenUser            | string      | Código do usuário
-| TipoEntrega1            | string      | Tipo da entrega: 1 = simples, 2 = malote, 3 = banco, 4 = cartório
-| DistanciaBoyEntrega            | float      | VERIFICAR!!
-| DistanciaTotalMelhorRota            | float      | Distância da entrega
-| AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
-| Observacao            | string      | Observações
-| TokenDesconto            | string      | VERIFICAR!!
-| ValorCorrida            | float      | Valor total da corrida
-| ValorBoy            | float      | Valor para o motoboy
-| ValorUse            | float      | Valor para a Use Entregas
-| DthCad            | datetime      | Data e hora do cadastro da entrega
-| IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
-| TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
-| StatusEntrega            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
-| StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
-| TokenPagamento            | string      | VERIFICAR!!
-| DthPagamento            | datetime      | Data e hora do pagamento
-| Teste            | integer      | VERIFICAR!!
-| TokenRel            | string      | VERIFICAR!!
-
 ##### GET : /api/delivery/:id
+
 Lista os detalhes de uma entrega específica.
 
+##### Tradução de campos:
+
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
-| Id            | integer      | Id da entrega
-| TokenUser            | string      | Código do usuário
-| TipoEntrega1            | string      | Tipo da entrega: 1 = simples, 2 = malote, 3 = banco, 4 = cartório
-| DistanciaBoyEntrega            | float      | VERIFICAR!!
-| DistanciaTotalMelhorRota            | float      | Distância da entrega
-| AgendarEntrega            | datetime      | Data e hora do agendamento da entrega
-| Observacao            | string      | Observações
-| TokenDesconto            | string      | VERIFICAR!!
-| ValorCorrida            | float      | Valor total da corrida
-| ValorBoy            | float      | Valor para o motoboy
-| ValorUse            | float      | Valor para a Use Entregas
-| DthCad            | datetime      | Data e hora do cadastro da entrega
-| IdBoyAceitou            | string      | Código do motoboy que aceitou a entrega
-| TipoPagamento            | integer      | Tipo de pagamento: VERIFICAR!!
-| StatusEntrega            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
-| StatusPagamento            | integer      | Status do pagamento: VERIFICAR!!
-| TokenPagamento            | string      | VERIFICAR!!
-| DthPagamento            | datetime      | Data e hora do pagamento
-| Teste            | integer      | VERIFICAR!!
-| TokenRel            | string      | VERIFICAR!!
+| id            | integer      | Id da entrega
+| cadastro            | datetime      | Data e hora do cadastro
+| distancia            | float      | Distância da entrega
+| valor_corrida            | float      | Valor total da corrida
+| valor_boy            | float      | Valor para o motoboy
+| valor_use            | float      | Valor para a Use Entregas
+| data_entrega            | datetime      | Data e hora da entrega
+| tipo            | string      | Tipo da entrega: 1 = simples, 2 = malote, 3 = banco, 4 = cartório
+| pagamento            | string      | Tipo de pagamento
+| status            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
+| observacao            | string      | Observações
+| enderecos | array | Listagem de endereços (vide tabela abaixo) 
+
+##### Endereços:
+
+| campo         | tipo         |  descrição  |
+| ------------- | ------------ | ------------- |
+| endereco | string | Endereço completo
+| numero | string | Número
+| lat | float | Latitude
+| lng | float | Longitude
+| complemento | string | Complemento
+| ordem | string | Ordem da entrega, local 1 é a origem.
 
 ##### POST : /api/simulate
 Simula uma entrega.
