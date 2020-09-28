@@ -3,29 +3,24 @@
 
 API e documentação de comunicação com a plataforma [Use Entregas](http://useentregas.com.br).
 
-Direitos reservados à [Php Enterprise](http://useentregas.com.br) Soluções em Software Ltda.
+Direitos reservados à [Php Enterprise](http://phpenterprise.com.br) Soluções em Software Ltda.
 
-### Requísitos 
+### Tornar-se parceiro
 
-* PHP 5.3 ou superior
-* Apache 2.2+
+Para você usar a API e se tornar um parceiro, será necessário a criação de um usuário e chave à [Use Entregas](http://useentregas.com.br).
+
+### Acesso direto (url)
+
+https://useentregas.com.br/api
 
 ### Autenticação
 
 Método Baurer
 
-Ex: !!!!!tokem no cabeçalho!!
+Parâmetros do header na chamada:
 
-### Acesso direto (url)
-
-    https://useentregas.com.br/api
-
-* {usuario}  = usuário do ws
-* {chave}    = chave do ws
-
-### Uso em ambiente de produção
-
-Será necessário a criação de um login, chave de acesso e a liberação do endereço de IP (servidor onde a API será executada).
+Content-Type: Application/JSON
+Authorization: Bearer {usertoken}
 
 ### Exemplo de uso
 
@@ -33,8 +28,14 @@ Será necessário a criação de um login, chave de acesso e a liberação do en
 
 ### Tipos de métodos
 
-##### GET : /api/list/
+##### GET : /
+Permite testar se conectou-se com sucesso à API.
+
+##### GET : /list
+
 Lista todas as entregas.
+
+##### Tradução de campos:
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
@@ -49,7 +50,9 @@ Lista todas as entregas.
 | pagamento            | string      | 
 | status            | string      | Status da entrega: 1 = procurando entregador, 2 = em andamento, 3 = cancelada, 9 = concluída
 | observacao            | string      | Observações
-| enderecos | array | Listagem de endereços
+| enderecos | array | Listagem de endereços (vide tabela abaixo) 
+
+##### Endereços:
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
