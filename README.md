@@ -23,10 +23,6 @@ Parâmetros do header na chamada:
   
   Authorization: Bearer {usertoken}</i>
 
-### Exemplo de uso
-
-...
-
 ### Tipos de métodos
 
 ##### GET : api/
