@@ -7,7 +7,7 @@ Direitos reservados à [Php Enterprise](http://phpenterprise.com.br) Soluções 
 
 ### Tornar-se parceiro
 
-Para você usar a API e se tornar um parceiro, será necessário a criação de um usuário e chave à [Use Entregas](http://useentregas.com.br).
+Para você usar a API e se tornar um parceiro, será necessário solicitar a criação de um usuário e chave à [Use Entregas](http://useentregas.com.br).
 
 ### Acesso direto (url)
 
@@ -20,6 +20,7 @@ Método Baurer
 Parâmetros do header na chamada:
 
 <i>Content-Type: Application/JSON
+  
   Authorization: Bearer {usertoken}</i>
 
 ### Exemplo de uso
