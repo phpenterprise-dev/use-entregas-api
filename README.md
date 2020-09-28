@@ -7,9 +7,9 @@ Direitos reservados à [Php Enterprise](http://phpenterprise.com.br) Soluções 
 
 ### Tornar-se parceiro
 
-Para você usar a API e se tornar um parceiro, será necessário solicitar a criação de um usuário e chave à [Use Entregas](http://useentregas.com.br).
+Para você usar a API e se tornar um parceiro, será necessário solicitar a criação de uma chave de usuário à [Use Entregas](http://useentregas.com.br).
 
-### Acesso direto (url)
+### Endereço da API (url)
 
 https://useentregas.com.br/api
 
