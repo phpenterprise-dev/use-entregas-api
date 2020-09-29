@@ -93,6 +93,16 @@ Lista os detalhes de uma entrega específica.
 | complemento | string | Complemento
 | ordem | string | Ordem da entrega, local 1 é a origem.
 
+##### POST : /api/address
+Encontra o código do endereço.
+
+| campo         | tipo         |  descrição  |
+| ------------- | ------------ | ------------- |
+| place_id            | string      | Código do endereço
+| formatted_address            | string      | Endereço completo
+| lat            | float      | Latitude
+| lng            | float      | Longitude
+
 ##### POST : /api/simulate
 Simula uma entrega.
 
