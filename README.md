@@ -3,7 +3,7 @@
 
 API e documentação de comunicação com a plataforma [Use Entregas](http://useentregas.com.br).
 
-Direitos reservados à [Php Enterprise](http://phpenterprise.com.br) Soluções em Software Ltda.
+Direitos reservados à Use Soluções em Entregas e Tecnologia Ltda.
 
 ### Tornar-se parceiro
 
