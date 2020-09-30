@@ -98,51 +98,23 @@ Encontra o código do endereço.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
-| place_id            | string      | Código do endereço
-| formatted_address            | string      | Endereço completo
-| lat            | float      | Latitude
-| lng            | float      | Longitude
+| endereco | string | Endereço completo
+| numero | string | Número
 
 ##### POST : /api/simulate
 Simula uma entrega.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
+| local_id            | float      | Local de partida
+| local_id2            | float      | Local de chegada
+| retornar            | boolean      | Retornar a origem
 
 
 ##### POST : /api/add
 Adiciona uma nova entrega.
 
-| campo         | tipo         |  descrição  |
-| ------------- | ------------ | ------------- |
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
-| id            | integer      | código
+<i>Método em atualização.</i>
 
 
 ### Atualização regular
