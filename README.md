@@ -1,5 +1,5 @@
 # Use Entregas API
-### Desenvolvido por Php Enterprise
+### Desenvolvido por PHP Enterprise
 
 API e documentação de comunicação com a plataforma [Use Entregas](http://useentregas.com.br).
 
