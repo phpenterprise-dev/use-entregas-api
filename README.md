@@ -94,33 +94,39 @@ Lista os detalhes de uma entrega específica.
 | ordem | string | Ordem da entrega, local 1 é a origem.
 
 ##### POST : /api/address
-Encontra o código do endereço.
+Retorna uma lista de endereços semelhantes 
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
 | endereco | string | Endereço completo
 | numero | string | Número
 
+*Retorna até 10 registros com ID para uso nos métodos "simulate" e "add"
+
 ##### POST : /api/simulate
 Simula uma entrega.
 
 | campo         | tipo         |  descrição  |
 | ------------- | ------------ | ------------- |
-| local_id            | float      | Local de partida
-| local_id2            | float      | Local de chegada
-| retornar            | boolean      | Retornar a origem
-
+| tipo            | float      | Local de partida
+| pagamento            | float      | Local de chegada
+| retorna_origem            | boolean      | Retornar a origem
+| enderecos | array | lista de ids por ordem de entrega
 
 ##### POST : /api/add
 Adiciona uma nova entrega.
 
-<i>Método em atualização.</i>
-
+| campo         | tipo         |  descrição  |
+| ------------- | ------------ | ------------- |
+| tipo            | float      | Local de partida
+| pagamento            | float      | Local de chegada
+| retorna_origem            | boolean      | Retornar a origem
+| enderecos | array | lista de ids por ordem de entrega
 
 ### Atualização regular
 
-@Release 0.1
+@Release 1.0.5
 
 Nota da versão:
 
-Nenhuma.
+Métodos de simulação e registro de solicitação de corrida em teste (versão beta).
